@@ -47,9 +47,6 @@ def create_app(db_path=None, policy=None):
     origins = [o.strip() for o in os.getenv("NOORLINE_CORS_ORIGINS", "").split(",") if o.strip()]
     if origins:  # solo si el frontend llama directo al backend (con el rewrite de Vercel no hace falta)
         app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST"], allow_headers=["X-API-Key", "Content-Type"])
-    from pathlib import Path as _Path
-    if isinstance(path, str) and path not in (":memory:", ""):
-        _Path(path).expanduser().resolve().parent.mkdir(parents=True, exist_ok=True)
     db = sqlite3.connect(path, check_same_thread=False)
     db.executescript("""
     CREATE TABLE IF NOT EXISTS cases(event_id TEXT PRIMARY KEY, level TEXT, rank INTEGER, status TEXT DEFAULT 'open', received TEXT, updated TEXT, data TEXT);
