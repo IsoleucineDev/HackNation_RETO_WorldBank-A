@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://REPLACE-ME.up.railway.app/:path*"
+      "destination": "https://hacknationretoworldbank-a-production.up.railway.app/:path*"
     }
   ],
   "headers": [
