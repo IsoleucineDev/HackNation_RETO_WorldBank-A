@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -e
-cd "$(dirname "$0")"
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -q -r requirements.txt
-python -m pytest -q
-echo "LISTO. Ahora corre:  ./run.sh"
