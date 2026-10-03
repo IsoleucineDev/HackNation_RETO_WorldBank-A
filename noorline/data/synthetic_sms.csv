@@ -1,0 +1,145 @@
+text,intent,lang,source
+quiero una cita,agendar_cita,es,synthetic
+necesito cita para mi hijo,agendar_cita,es,synthetic
+me pueden dar cita la proxima semana,agendar_cita,es,synthetic
+quisiera agendar una consulta,agendar_cita,es,synthetic
+cita para manana por favor,agendar_cita,es,synthetic
+puedo ir a consulta el lunes,agendar_cita,es,synthetic
+necesito turno con la enfermera,agendar_cita,es,synthetic
+quiero reservar una cita,agendar_cita,es,synthetic
+i want an appointment,agendar_cita,en,synthetic
+need an appointment for my son,agendar_cita,en,synthetic
+can i get an appointment next week,agendar_cita,en,synthetic
+i would like to book a visit,agendar_cita,en,synthetic
+appointment for tomorrow please,agendar_cita,en,synthetic
+can i come in on monday,agendar_cita,en,synthetic
+need to see the nurse,agendar_cita,en,synthetic
+book me a visit,agendar_cita,en,synthetic
+nataka miadi,agendar_cita,sw,synthetic
+naomba miadi kwa mtoto wangu,agendar_cita,sw,synthetic
+nahitaji kuona daktari wiki ijayo,agendar_cita,sw,synthetic
+naomba miadi kesho,agendar_cita,sw,synthetic
+ningependa kupanga miadi,agendar_cita,sw,synthetic
+naweza kuja kliniki jumatatu,agendar_cita,sw,synthetic
+nataka kuweka miadi,agendar_cita,sw,synthetic
+miadi tafadhali,agendar_cita,sw,synthetic
+recuerdeme mi cita,recordatorio,es,synthetic
+a que hora es mi cita,recordatorio,es,synthetic
+cuando es mi cita,recordatorio,es,synthetic
+mandeme recordatorio de mi cita,recordatorio,es,synthetic
+olvide la hora de mi cita,recordatorio,es,synthetic
+que dia me toca la consulta,recordatorio,es,synthetic
+recordatorio de la vacuna,recordatorio,es,synthetic
+confirmar mi cita,recordatorio,es,synthetic
+remind me of my appointment,recordatorio,en,synthetic
+what time is my appointment,recordatorio,en,synthetic
+when is my appointment,recordatorio,en,synthetic
+send me a reminder for my appointment,recordatorio,en,synthetic
+i forgot my appointment time,recordatorio,en,synthetic
+which day is my visit,recordatorio,en,synthetic
+vaccine reminder,recordatorio,en,synthetic
+confirm my appointment,recordatorio,en,synthetic
+nikumbushe miadi yangu,recordatorio,sw,synthetic
+miadi yangu ni saa ngapi,recordatorio,sw,synthetic
+miadi yangu ni lini,recordatorio,sw,synthetic
+tuma ukumbusho wa miadi,recordatorio,sw,synthetic
+nimesahau saa ya miadi,recordatorio,sw,synthetic
+nikumbushe chanjo,recordatorio,sw,synthetic
+thibitisha miadi yangu,recordatorio,sw,synthetic
+ni siku gani ya miadi,recordatorio,sw,synthetic
+ya me tome la medicina como sigo,seguimiento,es,synthetic
+quiero reportar como sigo despues de la consulta,seguimiento,es,synthetic
+mi seguimiento del mes pasado,seguimiento,es,synthetic
+ya estoy mejor quiero avisar,seguimiento,es,synthetic
+resultados de mi examen,seguimiento,es,synthetic
+llegaron mis resultados,seguimiento,es,synthetic
+control de mi embarazo,seguimiento,es,synthetic
+seguimiento de mi tratamiento,seguimiento,es,synthetic
+i finished my medicine what now,seguimiento,en,synthetic
+results of my test,seguimiento,en,synthetic
+did my results arrive,seguimiento,en,synthetic
+i am better want to report,seguimiento,en,synthetic
+follow up on my treatment,seguimiento,en,synthetic
+pregnancy follow up,seguimiento,en,synthetic
+i took the medicine how am i doing,seguimiento,en,synthetic
+update after my visit,seguimiento,en,synthetic
+nimemaliza dawa naendeleaje,seguimiento,sw,synthetic
+matokeo ya vipimo vyangu,seguimiento,sw,synthetic
+yamefika matokeo yangu,seguimiento,sw,synthetic
+nimepona nataka kuwaambia,seguimiento,sw,synthetic
+ufuatiliaji wa matibabu yangu,seguimiento,sw,synthetic
+ufuatiliaji wa ujauzito wangu,seguimiento,sw,synthetic
+nimekunywa dawa nifanye nini,seguimiento,sw,synthetic
+habari za ufuatiliaji,seguimiento,sw,synthetic
+me duele mucho la cabeza,malestar,es,synthetic
+tengo fiebre y vomito,malestar,es,synthetic
+me siento muy mal,malestar,es,synthetic
+mi hijo tiene fiebre alta,malestar,es,synthetic
+me duele el pecho,malestar,es,synthetic
+tengo mareos y dolor,malestar,es,synthetic
+no me siento bien desde ayer,malestar,es,synthetic
+mi bebe no quiere comer y esta caliente,malestar,es,synthetic
+i have a bad headache,malestar,en,synthetic
+i have fever and vomiting,malestar,en,synthetic
+i feel very sick,malestar,en,synthetic
+my child has a high fever,malestar,en,synthetic
+my chest hurts,malestar,en,synthetic
+i feel dizzy and in pain,malestar,en,synthetic
+not feeling well since yesterday,malestar,en,synthetic
+my baby will not eat and feels hot,malestar,en,synthetic
+naumwa sana kichwa,malestar,sw,synthetic
+nina homa na kutapika,malestar,sw,synthetic
+najisikia vibaya sana,malestar,sw,synthetic
+mtoto wangu ana homa kali,malestar,sw,synthetic
+kifua kinaniuma,malestar,sw,synthetic
+nina kizunguzungu na maumivu,malestar,sw,synthetic
+sijisikii vizuri tangu jana,malestar,sw,synthetic
+mtoto hataki kula ana joto,malestar,sw,synthetic
+a que hora abre la clinica,faq_horarios,es,synthetic
+donde queda la clinica,faq_horarios,es,synthetic
+cual es el horario de atencion,faq_horarios,es,synthetic
+cuanto cuesta la consulta,faq_horarios,es,synthetic
+esta abierta hoy la clinica,faq_horarios,es,synthetic
+hay vacunas hoy,faq_horarios,es,synthetic
+que dias atienden,faq_horarios,es,synthetic
+donde esta la clinica mas cercana,faq_horarios,es,synthetic
+what time does the clinic open,faq_horarios,en,synthetic
+where is the clinic,faq_horarios,en,synthetic
+what are the opening hours,faq_horarios,en,synthetic
+how much does a visit cost,faq_horarios,en,synthetic
+is the clinic open today,faq_horarios,en,synthetic
+are there vaccines today,faq_horarios,en,synthetic
+which days are you open,faq_horarios,en,synthetic
+where is the nearest clinic,faq_horarios,en,synthetic
+kliniki inafunguliwa saa ngapi,faq_horarios,sw,synthetic
+kliniki iko wapi,faq_horarios,sw,synthetic
+masaa ya kazi ni yapi,faq_horarios,sw,synthetic
+bei ya kuona daktari ni ngapi,faq_horarios,sw,synthetic
+kliniki imefunguliwa leo,faq_horarios,sw,synthetic
+kuna chanjo leo,faq_horarios,sw,synthetic
+mnafanya kazi siku gani,faq_horarios,sw,synthetic
+kliniki ya karibu iko wapi,faq_horarios,sw,synthetic
+quiero hablar con una persona,hablar_persona,es,synthetic
+pasame con el doctor,hablar_persona,es,synthetic
+necesito hablar con la enfermera,hablar_persona,es,synthetic
+llamenme por favor,hablar_persona,es,synthetic
+hablar con alguien,hablar_persona,es,synthetic
+no entiendo quiero una persona,hablar_persona,es,synthetic
+comunicame con un humano,hablar_persona,es,synthetic
+que me llame alguien,hablar_persona,es,synthetic
+i want to talk to a person,hablar_persona,en,synthetic
+connect me to the doctor,hablar_persona,en,synthetic
+need to speak with the nurse,hablar_persona,en,synthetic
+please call me,hablar_persona,en,synthetic
+talk to someone,hablar_persona,en,synthetic
+i do not understand i want a person,hablar_persona,en,synthetic
+connect me to a human,hablar_persona,en,synthetic
+have someone call me,hablar_persona,en,synthetic
+nataka kuzungumza na mtu,hablar_persona,sw,synthetic
+niunganishe na daktari,hablar_persona,sw,synthetic
+nahitaji kuongea na nesi,hablar_persona,sw,synthetic
+nipigieni simu tafadhali,hablar_persona,sw,synthetic
+naomba kuongea na mtu,hablar_persona,sw,synthetic
+sielewi nataka mtu,hablar_persona,sw,synthetic
+niunganishe na binadamu,hablar_persona,sw,synthetic
+mtu anipigie,hablar_persona,sw,synthetic

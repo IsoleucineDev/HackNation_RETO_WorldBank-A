@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NoorLine - Bandeja clinica</title>
+<style>
+:root{--bg:#f6f7f9;--ink:#10202b;--brand:#0b3a53}
+*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+header{background:var(--brand);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+#st{font-size:13px;opacity:.9}.card{margin:10px;padding:10px 14px;border-radius:8px;background:#fff;border-left:8px solid #999;box-shadow:0 1px 2px #0002}
+.alto{border-color:#d62828}.medio{border-color:#f4a100}.bajo{border-color:#2a9d4a}
+button{margin:6px 6px 0 0;padding:7px 11px;border:0;border-radius:6px;background:var(--brand);color:#fff;cursor:pointer;font-size:14px}
+button.ghost{background:#fff3;border:1px solid #fff8}small{color:#555}#login{max-width:360px;margin:60px auto;padding:20px;background:#fff;border-radius:10px}
+input{width:100%;padding:9px;margin:8px 0;border:1px solid #bbb;border-radius:6px;font-size:15px}
+</style></head><body>
+<header><b>NoorLine</b><span>La IA prioriza; una persona decide</span><span id="st"></span><button class="ghost" id="out" hidden>Salir</button></header>
+<div id="login" hidden><b>Acceso del personal</b><p><small>Ingrese la clave de la clinica. Se guarda solo en esta pestana.</small></p>
+<input id="key" type="password" placeholder="API key" autocomplete="off"><button id="go">Entrar</button><p id="err" style="color:#b00"></p></div>
+<div id="list"></div>
+<script>
+const API = "/api";            // Vercel reescribe /api/* hacia Railway (ver vercel.json)
+const POLL_MS = 8000;           // Hobby: 1M edge requests/mes; se pausa con la pestana oculta
+const $ = id => document.getElementById(id);
+let key = sessionStorage.getItem("nl_key") || "", lastAlto = 0, timer = null;
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const H = () => ({ "X-API-Key": key, "Content-Type": "application/json" });
+function beep(){ try{ const a=new AudioContext(), o=a.createOscillator(); o.connect(a.destination); o.start(); setTimeout(()=>o.stop(),300);}catch(e){} }
+function show(logged){ $("login").hidden = logged; $("out").hidden = !logged; $("list").hidden = !logged; }
+async function load(){
+  if(!key) return show(false);
+  try{
+    const r = await fetch(API + "/cases", { headers: H() });
+    if(r.status === 401){ sessionStorage.removeItem("nl_key"); key=""; $("err").textContent="Clave invalida"; return show(false); }
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const cs = await r.json(); show(true);
+    const n = cs.filter(c => c.level === "alto").length; if(n > lastAlto) beep(); lastAlto = n;
+    document.title = (n ? "(" + n + ") " : "") + "NoorLine";
+    $("st").textContent = "Conectado - " + new Date().toLocaleTimeString();
+    $("list").innerHTML = cs.map(c => `<div class="card ${esc(c.level)}"><b>${esc(c.level).toUpperCase()}</b> - ${esc(c.reason)}
+      <small>conf ${Number(c.conf).toFixed(2)} | ${esc(c.intent)} | ${esc(c.received)}</small>
+      <div>${c.text ? esc(c.text) : "<i>(sin contenido: sin consentimiento)</i>"}</div>
+      ${["confirmar_urgencia:Confirmar urgencia","bajar_a_rutina:Bajar a rutina","pedir_aclaracion:Pedir aclaracion","resolver:Resolver"]
+        .map(x => { const [a,l] = x.split(":"); return `<button data-id="${esc(c.event_id)}" data-a="${a}">${l}</button>`; }).join("")}</div>`).join("")
+      || '<p style="margin:16px">Sin casos abiertos.</p>';
+  }catch(e){ $("st").textContent = "Sin conexion con el backend (reintentando)"; }
+}
+$("list").addEventListener("click", async e => {
+  const b = e.target.closest("button[data-id]"); if(!b) return;
+  const actor = prompt("Su nombre (obligatorio, queda en la auditoria):"); if(!actor || !actor.trim()) return;
+  await fetch(API + "/cases/" + encodeURIComponent(b.dataset.id) + "/action", { method:"POST", headers:H(), body: JSON.stringify({action:b.dataset.a, actor:actor.trim()}) });
+  load();
+});
+$("go").onclick = () => { key = $("key").value.trim(); if(key){ sessionStorage.setItem("nl_key", key); $("err").textContent=""; load(); } };
+$("out").onclick = () => { sessionStorage.removeItem("nl_key"); key=""; show(false); };
+function loop(){ clearInterval(timer); timer = setInterval(() => { if(!document.hidden) load(); }, POLL_MS); }
+document.addEventListener("visibilitychange", () => { if(!document.hidden) load(); });
+show(!!key); load(); loop();
+</script></body></html>

@@ -1,0 +1,1 @@
+Agrega una senal de alerta a policies/clinica_ondera_01.yaml con el id y las palabras clave en es/en/sw que te de el usuario ($ARGUMENTS). Anade las frases a ALERT_SET en tests/test_core.py y corre `make test`. Recuerda: la lista es ilustrativa y debe validarla personal clinico.

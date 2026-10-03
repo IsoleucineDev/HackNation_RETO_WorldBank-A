@@ -1,0 +1,29 @@
+# POLITICA CLINICA DE EJEMPLO (ILUSTRATIVA, NO VALIDADA CLINICAMENTE).
+# En un despliegue real la lista red_flags la define y valida el personal clinico.
+clinic_id: clinica_ondera_01
+autonomy_level: A1          # A0 solo enrutar | A1 asistente | A2 autonomo en rutina (nunca en urgencias)
+language_default: sw        # lengua nombrada en la demo (proxy con datos abiertos; requiere validacion nativa)
+thresholds:
+  alto_urgencia: 0.85       # P(malestar) minima para Nivel Alto por modelo
+  medio_urgencia: 0.35
+  confianza_minima: 0.45    # por debajo -> Nivel Medio, nunca respuesta automatica
+faq:
+  horario: "L-V 8:00-14:00"
+red_flags:
+  - id: dificultad_respirar
+    nivel: alto
+    keywords: [no puede respirar, no puedo respirar, falta de aire, "can't breathe", cant breathe, cannot breathe, difficulty breathing, trouble breathing, siwezi kupumua, hawezi kupumua, anashindwa kupumua, nashindwa kupumua]
+  - id: sangrado_intenso
+    nivel: alto
+    keywords: [mucha sangre, sangrado fuerte, sangrando mucho, heavy bleeding, a lot of blood, bleeding a lot, damu nyingi]
+  - id: inconsciencia
+    nivel: alto
+    keywords: [desmay, inconsciente, no despierta, unconscious, passed out, not waking, amezimia, hajitambui]
+  - id: convulsiones
+    nivel: alto
+    keywords: [convuls, seizure, kifafa, degedege]
+escalation:
+  medio_timeout_min: 20     # Medio sin atencion humana sube a Alto (fail-safe)
+  alto_retry_min: 3
+allowed_patient_replies: [cita_propuesta, recordatorio, derivar_persona, mensaje_urgencia_fijo, faq_horarios, pregunta_aclaracion, acuse]
+data_retention_days: 365

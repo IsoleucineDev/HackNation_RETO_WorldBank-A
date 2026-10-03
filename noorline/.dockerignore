@@ -1,0 +1,9 @@
+.venv
+tests
+data
+models
+docs
+frontend
+*.db
+.git
+__pycache__

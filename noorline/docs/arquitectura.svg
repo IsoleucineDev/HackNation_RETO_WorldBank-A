@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1180" viewBox="0 0 1700 1180">
+<defs><marker id="a2a9d4a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a9d4a"/></marker><marker id="a7b3fe4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7b3fe4"/></marker><marker id="a10202b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#10202b"/></marker><marker id="ad62828" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d62828"/></marker><marker id="a0b6fa4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b6fa4"/></marker></defs>
+<rect width="1700" height="1180" fill="#f6f7f9"/>
+<rect width="1700" height="86" fill="#0b3a53"/>
+<text x="36" y="40" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="start">NoorLine · Arquitectura de despliegue</text>
+<text x="36" y="68" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="normal" fill="#bfe3f5" text-anchor="start">Small AI offline-first para atención primaria · Backend en Railway · Frontend en Vercel · Planes gratuitos</text>
+<rect x="24" y="110" width="520" height="700" rx="16" fill="#eef8f0" stroke="#2a9d4a" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="44" y="140" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#2a9d4a" text-anchor="start">COMUNIDAD · sin internet confiable</text>
+<rect x="64" y="165" width="440" height="100" rx="12" fill="#fff" stroke="#2a9d4a" stroke-width="2"/>
+<text x="84" y="195" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#10202b" text-anchor="start">Teléfono básico de Noor</text>
+<text x="84" y="220" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">Llamada de voz (IVR por teclas) o SMS</text>
+<text x="84" y="241" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">No instala nada: usa el celular que ya tiene</text>
+<rect x="64" y="330" width="440" height="450" rx="12" fill="#fff" stroke="#2a9d4a" stroke-width="3"/>
+<text x="84" y="360" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2a9d4a" text-anchor="start">NODO COMUNITARIO (celular reciclado)</text>
+<text x="84" y="392" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Pasarela SMS / IVR simulado por DTMF</text>
+<text x="84" y="416" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Consentimiento auditable: 1 acepto · 9 revoca</text>
+<text x="84" y="440" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Small AI en el borde (&lt; 1 MB):</text>
+<text x="84" y="464" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">    reglas de alerta  &gt;  clasificador TF-IDF</text>
+<text x="84" y="488" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Decide SIN red: Alto / Medio / Bajo</text>
+<text x="84" y="512" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Respuestas solo de LISTA CERRADA</text>
+<text x="84" y="536" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• SQLite con cifrado de campo (Fernet)</text>
+<text x="84" y="560" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• Cola store-and-forward con event_id</text>
+<text x="84" y="584" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="normal" fill="#10202b" text-anchor="start">• ALERTA LOCAL al personal si es urgencia</text>
+<circle cx="45" cy="200" r="15" fill="#0b6fa4"/>
+<text x="45" y="205" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+<path d="M284,265 L284,330" fill="none" stroke="#0b6fa4" stroke-width="3" marker-end="url(#a0b6fa4)" marker-start="url(#a0b6fa4)"/>
+<text x="296" y="303" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#0b6fa4" text-anchor="start">SMS / voz (red GSM)</text>
+<rect x="590" y="110" width="500" height="700" rx="16" fill="#f3edff" stroke="#7b3fe4" stroke-width="2"/>
+<text x="610" y="140" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#7b3fe4" text-anchor="start">RAILWAY · Backend (Docker + FastAPI)</text>
+<rect x="615" y="165" width="450" height="270" rx="12" fill="#fff" stroke="#7b3fe4" stroke-width="3"/>
+<text x="635" y="195" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#7b3fe4" text-anchor="start">API del servidor central</text>
+<text x="635" y="225" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">POST /events      recibe y deduplica (idempotente)</text>
+<text x="635" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">GET  /cases       bandeja ordenada: alto &gt; medio &gt; bajo</text>
+<text x="635" y="273" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">POST /cases/{id}/action   decide una PERSONA</text>
+<text x="635" y="297" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">POST /admin/escalate   medio sin atender → alto</text>
+<text x="635" y="321" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">GET  /audit/verify  auditoría con hash encadenado</text>
+<text x="635" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">GET  /health     chequeo de Railway</text>
+<text x="635" y="385" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#7b3fe4" text-anchor="start">Exige X-API-Key · arranca solo si NOORLINE_API_KEY existe</text>
+<text x="635" y="406" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#7b3fe4" text-anchor="start">(NOORLINE_ENV=production)</text>
+<rect x="615" y="460" width="450" height="110" rx="12" fill="#fff" stroke="#7b3fe4" stroke-width="2"/>
+<text x="635" y="490" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#7b3fe4" text-anchor="start">Volume de Railway montado en /data</text>
+<text x="635" y="516" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">server.db (SQLite): casos + auditoría</text>
+<text x="635" y="537" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">Sin volume los datos se pierden en cada redeploy</text>
+<rect x="615" y="595" width="450" height="190" rx="12" fill="#fff" stroke="#7b3fe4" stroke-width="2"/>
+<text x="635" y="625" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#7b3fe4" text-anchor="start">Variables de entorno (panel de Railway)</text>
+<text x="635" y="651" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">NOORLINE_API_KEY=&lt;clave larga y secreta&gt;</text>
+<text x="635" y="673" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">NOORLINE_DB=/data/server.db</text>
+<text x="635" y="695" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">NOORLINE_ENV=production</text>
+<text x="635" y="717" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">PORT  (lo inyecta Railway)</text>
+<text x="635" y="739" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">Dominio público: *.up.railway.app</text>
+<rect x="1130" y="110" width="548" height="700" rx="16" fill="#eceff3" stroke="#10202b" stroke-width="2"/>
+<text x="1150" y="140" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#10202b" text-anchor="start">VERCEL · Frontend estático (Hobby)</text>
+<rect x="1155" y="165" width="498" height="250" rx="12" fill="#fff" stroke="#10202b" stroke-width="3"/>
+<text x="1175" y="195" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#10202b" text-anchor="start">Panel clínico (index.html, sin build)</text>
+<text x="1175" y="225" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Login con API key (solo en sessionStorage)</text>
+<text x="1175" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Bandeja HITL ordenada por riesgo</text>
+<text x="1175" y="273" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Botones: Confirmar urgencia · Bajar a rutina</text>
+<text x="1175" y="297" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">   · Pedir aclaración · Resolver</text>
+<text x="1175" y="321" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Pide el nombre del humano en cada acción</text>
+<text x="1175" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Sonido + título parpadeante en Alto</text>
+<text x="1175" y="369" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Polling cada 8 s; pausa si la pestaña está oculta</text>
+<rect x="1155" y="440" width="498" height="190" rx="12" fill="#fff" stroke="#10202b" stroke-width="2"/>
+<text x="1175" y="470" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#10202b" text-anchor="start">vercel.json  ·  rewrite hacia Railway</text>
+<text x="1175" y="498" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">"source":      "/api/:path*"</text>
+<text x="1175" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">"destination": "https://&lt;tu-app&gt;.up.railway.app/:path*"</text>
+<text x="1175" y="542" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">El navegador solo ve /api/... (mismo origen):</text>
+<text x="1175" y="564" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">sin CORS y sin exponer la URL de Railway.</text>
+<text x="1175" y="586" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">python scripts/set_backend_url.py &lt;URL&gt;</text>
+<rect x="1155" y="655" width="498" height="130" rx="12" fill="#fff" stroke="#10202b" stroke-width="2"/>
+<text x="1175" y="683" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#10202b" text-anchor="start">Cabeceras de seguridad</text>
+<text x="1175" y="708" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">nosniff · X-Frame-Options DENY</text>
+<text x="1175" y="730" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">Referrer-Policy no-referrer · Cache-Control no-store</text>
+<rect x="1230" y="840" width="350" height="80" rx="12" fill="#fff" stroke="#d62828" stroke-width="3"/>
+<text x="1250" y="870" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d62828" text-anchor="start">Personal clínico (navegador)</text>
+<text x="1250" y="895" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">Una PERSONA toma la decisión final</text>
+<path d="M504,620 L567,620 L567,300 L615,300" fill="none" stroke="#7b3fe4" stroke-width="3" marker-end="url(#a7b3fe4)"/>
+<text transform="translate(538,470) rotate(-90)" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#7b3fe4" text-anchor="middle">HTTPS POST /events + X-API-Key</text>
+<circle cx="567" cy="650" r="15" fill="#7b3fe4"/>
+<text x="567" y="655" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+<path d="M1155,520 L1110,520 L1110,330 L1065,330" fill="none" stroke="#10202b" stroke-width="3" marker-end="url(#a10202b)"/>
+<circle cx="1110" cy="395" r="15" fill="#10202b"/>
+<text x="1110" y="400" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">4</text>
+<text transform="translate(1102,470) rotate(-90)" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#10202b" text-anchor="middle">proxy /api/*</text>
+<path d="M1580,880 L1666,880 L1666,290 L1653,290" fill="none" stroke="#d62828" stroke-width="3" marker-end="url(#ad62828)"/>
+<circle cx="1666" cy="600" r="15" fill="#d62828"/>
+<text x="1666" y="605" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+<text x="1580" y="940" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#d62828" text-anchor="end">abre la URL de Vercel e inicia sesión con la API key</text>
+<path d="M284,780 L284,880 L1230,880" fill="none" stroke="#d62828" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#ad62828)"/>
+<circle cx="330" cy="862" r="15" fill="#d62828"/>
+<text x="330" y="867" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">5</text>
+<text x="352" y="867" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#d62828" text-anchor="start">Alerta LOCAL (SMS/sirena) al personal de guardia: funciona sin Railway ni Vercel</text>
+<rect x="24" y="960" width="520" height="190" rx="12" fill="#fff" stroke="#2a9d4a" stroke-width="2"/>
+<text x="44" y="990" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2a9d4a" text-anchor="start">Sin red: qué pasa</text>
+<text x="44" y="1016" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">1. El nodo atiende y clasifica localmente.</text>
+<text x="44" y="1040" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">2. Urgencia → alerta local inmediata.</text>
+<text x="44" y="1064" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">3. Todo se encola con event_id único.</text>
+<text x="44" y="1088" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">4. Al volver la red: sync, urgencias primero.</text>
+<text x="44" y="1112" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">5. Si se reenvía, el servidor no duplica.</text>
+<rect x="570" y="960" width="520" height="190" rx="12" fill="#fff" stroke="#7b3fe4" stroke-width="2"/>
+<text x="590" y="990" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#7b3fe4" text-anchor="start">Railway · plan gratuito (verificado oct 2026)</text>
+<text x="590" y="1016" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Prueba 30 días con $5 de crédito; luego plan Free</text>
+<text x="590" y="1040" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">   con $1/mes, 1 vCPU, 0.5 GB RAM, volume 0.5 GB.</text>
+<text x="590" y="1064" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Fin de semana de hackathon: alcanza de sobra.</text>
+<text x="590" y="1088" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Después puede no sostener 24/7: usar sleep o Hobby.</text>
+<text x="590" y="1112" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Un solo servicio, sin Postgres, para gastar poco.</text>
+<rect x="1116" y="960" width="562" height="190" rx="12" fill="#fff" stroke="#10202b" stroke-width="2"/>
+<text x="1136" y="990" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#10202b" text-anchor="start">Vercel Hobby · gratis</text>
+<text x="1136" y="1016" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• 100 GB de transferencia y 1 M de edge requests/mes.</text>
+<text x="1136" y="1040" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Solo uso personal/no comercial (válido para hackathon).</text>
+<text x="1136" y="1064" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Sin sobrecargos: al llegar al tope se pausa.</text>
+<text x="1136" y="1088" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Por eso el polling es de 8 s y se pausa oculto.</text>
+<text x="1136" y="1112" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" fill="#10202b" text-anchor="start">• Los rewrites externos no necesitan funciones.</text>
+<text x="850.0" y="1170" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Datos de entrenamiento sintéticos · lista de alertas ilustrativa (sin validación clínica) · la IA no diagnostica ni escribe texto libre al paciente</text>
+</svg>

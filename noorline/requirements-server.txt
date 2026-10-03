@@ -1,0 +1,4 @@
+# Solo lo que necesita el backend en Railway (sin scikit-learn: el modelo vive en el nodo)
+fastapi>=0.110
+uvicorn>=0.29
+pyyaml>=6.0

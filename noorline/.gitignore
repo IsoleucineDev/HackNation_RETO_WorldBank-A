@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.noorline_key
+*.db
+models/*.joblib
+.pytest_cache/
